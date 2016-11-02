@@ -18,7 +18,6 @@ debug(n.toString(16));
 test('### Some tests - primitive data types ###', function(t) {
     var n = 15;
     t.deepEqual('F', n.toString(16).toUpperCase(), 'Number to string');
-    t.end();
     var k;
     t.equal(k,undefined, 'Variable is undefined');
     var k2 = undefined;
@@ -33,4 +32,5 @@ test('### Some tests - primitive data types ###', function(t) {
     t.equal(3 + false, 3, 'false is converted to 0');
     t.equal(3 + null, 3, 'null is converted to 0' );
     t.equal(isNaN(3 + undefined), true, 'undefined is coerced to NaN');
+    t.end();
 });
