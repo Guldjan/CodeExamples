@@ -1,4 +1,4 @@
-exports.M1 = class {
+module.exports = class M1{
     constructor(num, str, bool, nul, undef){
         this.num = num;
         this.str = str;
@@ -7,4 +7,3 @@ exports.M1 = class {
         this.undef = undef;
     }
 }
-//exports.M1// {M1 as default}
